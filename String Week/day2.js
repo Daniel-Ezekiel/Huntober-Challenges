@@ -1,8 +1,6 @@
 // Parameter: single mashed up string sentences that does not make any sense
 // Return: a string that makes sense after fixing the mashed up string
 
-// Psuedocode: find index of last 'c', then slice from that index to end; then split string using 'Eek!' reverse string and then join; return result
-
 const mashUpFix = str => {
     const firstC = str.indexOf('c');
     const noSmallC = str.slice(firstC+1);
